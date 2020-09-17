@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTMonAnViewController" customModule="TraditionalFood" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionthucan" destination="TTW-xG-APx" id="cNO-ZV-keI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TTW-xG-APx">
+                    <rect key="frame" x="0.0" y="75" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Geh-Px-PJN"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QnV-7N-mwQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2r-5W-aT5">
+                    <rect key="frame" x="0.0" y="275" width="414" height="587"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="W2r-5W-aT5" secondAttribute="bottom" id="1U2-M5-gqJ"/>
+                <constraint firstItem="TTW-xG-APx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="31" id="6sC-j2-MMw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TTW-xG-APx" secondAttribute="trailing" id="Ab2-0B-lgc"/>
+                <constraint firstItem="W2r-5W-aT5" firstAttribute="top" secondItem="TTW-xG-APx" secondAttribute="bottom" id="gDg-JO-oTH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W2r-5W-aT5" secondAttribute="trailing" id="gKY-uK-fDc"/>
+                <constraint firstItem="W2r-5W-aT5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hLa-Vg-prj"/>
+                <constraint firstItem="TTW-xG-APx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iM8-Fy-kKH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </view>
+    </objects>
+</document>

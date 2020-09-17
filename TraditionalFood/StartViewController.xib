@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="TraditionalFood" customModuleProvider="target">
+            <connections>
+                <outlet property="tradition" destination="myl-bn-8tn" id="afS-9f-YG3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tradition Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myl-bn-8tn">
+                    <rect key="frame" x="80" y="278.5" width="254" height="37"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                    <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5a-E0-wi1">
+                    <rect key="frame" x="80" y="415.5" width="254" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <state key="normal" title="Đăng Nhập">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchDown" id="hfa-5A-tgi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuF-6R-NiJ">
+                    <rect key="frame" x="80" y="517.5" width="254" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <state key="normal" title="Đăng Ký">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="signup:" destination="-1" eventType="touchUpInside" id="Q4E-QE-NqH"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="i7Q-lZ-BIk">
+                    <rect key="frame" x="100" y="124" width="214" height="124.5"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="uuF-6R-NiJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="1lk-87-vdd"/>
+                <constraint firstItem="i7Q-lZ-BIk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="30j-jU-KNI"/>
+                <constraint firstItem="uuF-6R-NiJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4lL-Fd-ZUt"/>
+                <constraint firstItem="i7Q-lZ-BIk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="6Sm-Ye-CQA"/>
+                <constraint firstItem="myl-bn-8tn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JVf-m0-wqZ"/>
+                <constraint firstItem="m5a-E0-wi1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="T4b-0S-ima"/>
+                <constraint firstItem="myl-bn-8tn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="TGl-NE-NGf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m5a-E0-wi1" secondAttribute="trailing" constant="80" id="WKN-HH-YHw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uuF-6R-NiJ" secondAttribute="trailing" constant="80" id="Wzz-4N-AMO"/>
+                <constraint firstItem="myl-bn-8tn" firstAttribute="top" secondItem="i7Q-lZ-BIk" secondAttribute="bottom" constant="30" id="aWU-bt-bAs"/>
+                <constraint firstItem="m5a-E0-wi1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="hvv-fh-ozU"/>
+                <constraint firstItem="m5a-E0-wi1" firstAttribute="top" secondItem="myl-bn-8tn" secondAttribute="bottom" constant="100" id="iA7-47-QAl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="myl-bn-8tn" secondAttribute="trailing" constant="80" id="sMv-Nc-aZx"/>
+                <constraint firstItem="uuF-6R-NiJ" firstAttribute="top" secondItem="m5a-E0-wi1" secondAttribute="bottom" constant="50" id="uy8-oM-wTh"/>
+                <constraint firstItem="i7Q-lZ-BIk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="vzl-Jx-WDp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="177.5" height="124.5"/>
+    </resources>
+</document>

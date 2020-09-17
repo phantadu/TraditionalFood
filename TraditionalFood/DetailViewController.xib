@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="TraditionalFood" customModuleProvider="target">
+            <connections>
+                <outlet property="namelabel" destination="bry-2C-CfJ" id="Txu-6d-93I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="BR8-V6-9rs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sm-4k-tfm">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uG-zY-fIG" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bry-2C-CfJ">
+                                    <rect key="frame" x="8" y="8" width="398" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="bry-2C-CfJ" secondAttribute="trailing" constant="8" id="MIk-yY-y7e"/>
+                                <constraint firstItem="bry-2C-CfJ" firstAttribute="leading" secondItem="6uG-zY-fIG" secondAttribute="leading" constant="8" id="PH3-Z1-NRw"/>
+                                <constraint firstAttribute="bottom" secondItem="bry-2C-CfJ" secondAttribute="bottom" constant="8" id="lCL-gJ-zaY"/>
+                                <constraint firstItem="bry-2C-CfJ" firstAttribute="top" secondItem="6uG-zY-fIG" secondAttribute="top" constant="8" id="xpo-qH-1ZU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6uG-zY-fIG" firstAttribute="leading" secondItem="7sm-4k-tfm" secondAttribute="leading" id="1ga-ZP-gE2"/>
+                        <constraint firstAttribute="bottom" secondItem="6uG-zY-fIG" secondAttribute="bottom" id="GSZ-Nx-fm1"/>
+                        <constraint firstItem="6uG-zY-fIG" firstAttribute="top" secondItem="7sm-4k-tfm" secondAttribute="top" id="foo-B1-fwG"/>
+                        <constraint firstAttribute="trailing" secondItem="6uG-zY-fIG" secondAttribute="trailing" id="gIg-Ae-j3v"/>
+                        <constraint firstItem="6uG-zY-fIG" firstAttribute="centerX" secondItem="7sm-4k-tfm" secondAttribute="centerX" id="gL6-uy-kR4"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xL4-BR-ocY"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="7sm-4k-tfm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="32T-Av-HaJ"/>
+                <constraint firstItem="7sm-4k-tfm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lci-jd-lrB"/>
+                <constraint firstItem="7sm-4k-tfm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pYA-hN-PK9"/>
+                <constraint firstItem="7sm-4k-tfm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="w29-g6-1IT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="237.68115942028987" y="183.48214285714286"/>
+        </view>
+    </objects>
+</document>
